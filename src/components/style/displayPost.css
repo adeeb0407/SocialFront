@@ -1,0 +1,127 @@
+*{
+  transition: ease-in-out 0.4s;
+}
+.displayPost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card:hover{
+  transform: scale(1.06);
+  
+}
+.card-tags{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 550px;
+  }
+  .card-header img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+  }
+  
+  .tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .tag-teal {
+    background-color: #47bcd4;
+  }
+  .tag-purple {
+    background-color: #5e76bf;
+  }
+  .tag-pink {
+    background-color: #cd5b9f;
+  }
+  .extra_section{
+    margin-top: 20px;
+    display: flex;
+    width:100%;
+  }
+  .update{
+    display: flex;
+    margin-left: auto;
+    justify-content: space-evenly;
+
+    margin-bottom: 30px;
+    padding: 5px;
+    
+    color : white;
+  
+  }
+  .update button {
+    color : white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #5e76bf;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .card-body p {
+    font-size: 13px;
+    margin: 0 0 40px;
+  }
+  .user {
+    display: flex;
+    margin-top: auto;
+  }
+  
+  .user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .user-info h5 {
+    margin: 0;
+  }
+  .user-info small {
+    color: #545d7a;
+  }
+  small{
+    color : #D31529;
+  }
+  @media (max-width: 600px) {
+    .card{
+      width:  330px;
+    }
+    .card-header img{
+      height: 300px;
+    }
+    .card-body .user {
+      display: none;
+    }
+    .userName{
+      display: none;
+    }
+  }

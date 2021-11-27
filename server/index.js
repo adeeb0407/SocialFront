@@ -3,7 +3,8 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv'
-import postAllRouter from './route/posts.js'
+import postAllRouter from './routers/posts.js'
+import authUsers from "./routers/auth.js"
 
 const app = express();
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(cors());
 
 //Routes
 app.use('/posts', postAllRouter)
+app.use('/user', authUsers)
 
 
 // const DB_URL = 'mongodb+srv://tridentGM:adeebshah1234@socialfront.f3cle.mongodb.net/socialFront?retryWrites=true&w=majority'
